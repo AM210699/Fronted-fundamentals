@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Android Web</title>
 </head>
 <body>
-    <header class="navbar bg-primary">
-        <nav class="container d-flex justify-content-around text-red text-decoration-none">
-            <a class="text-white">Home</a>
-            <a class="text-white">About Us</a>
-            <a class="text-white">Products</a>
-            <a class="text-white">Services</a>
-            <a class="text-white">Reviews</a>
-            <a class="text-white">Blog</a>
+    <header>
+        <nav id="navbar" class="navbar bg-primary" data-bs-theme="dark">
+            <a class="navbar-brand">Home</a>
+            <a class="navbar-brand">About Us</a>
+            <a class="navbar-brand">Products</a>
+            <a class="navbar-brand">Services</a>
+            <a class="navbar-brand">Reviews</a>
+            <a class="navbar-brand">Blog</a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+            
         </nav>
     </header>
     <main>
@@ -32,17 +38,17 @@
             <div class="container-short-paragraphe">
                 <p>Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raíces en una pieza clásica de la literatura del Latín, que data del año 45 antes de Cristo, haciendo que este adquiera más de 2000 años de antigüedad.</p>
             </div>
-            <div class="container-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/fis26HvvDII?si=8B0_U6j4kf-4UNBx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div>
+                <iframe  class="container-video" src="https://www.youtube.com/embed/fis26HvvDII?si=8B0_U6j4kf-4UNBx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </section>
         <section class="button-options container">
-            <button type="button" class="btn btn-primary">Button 1</button>
-            <button type="button" class="btn btn-primary">Button 2</button>
-            <button type="button" class="btn btn-primary">Button 3</button>
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+            <button type="button" class="btn btn-outline-warning">Warning</button>
+            <button type="button" class="btn btn-outline-info">Information</button>
         </section>
         <section class="grid-container container">
-            <div class="form-container">
+            <div class="form-container" >
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
@@ -61,19 +67,41 @@
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
                     </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" class="btn btn-success">Submit</button>
                 </form>
             </div>
-            <div class="rounded" id="image1">
+            <div id="image1" class="img-fluid">
                 <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Expression-Header-2880x1200_1.width-1200.format-webp.webp">
             </div>
-            <div class="rounded" id="image2">
+            <div  id="image2">
                 <img src="https://d2a5isokysfowx.cloudfront.net/wp-content/uploads/2022/04/que-es-android-studio-scaled-1200x675.jpg">
             </div>
-            <div class="rounded" id="image3">
+            <div id="image3">
                 <img src="https://img.europapress.es/fotoweb/fotonoticia_20230717132550_420.jpg">
             </div>
         </section>
+        <section>
+            <div id="section-project-flex">
+                <div id="grid-android-column-1">
+                    <h1 style="grid-area: title-features;">Lorem Ipsum</h1>
+                    <div id="grid-android-column-1-text">
+                        <p style="grid-area: android-text; width: 85%; text-align: justify;">l contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. </p>
+                    </div>
+                    <button type="button" class="btn btn-outline-secondary" >¿Por qué lo usamos?</button>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Android_Studio_icon_%282023%29.svg/800px-Android_Studio_icon_%282023%29.svg.png" alt="android-features" style="grid-area: android-features-img; width: 40%;">
+                </div>
+                <div id="android-relative-column">
+                    <div id="android-img-with-green-bg">
+                        <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/10/android-2832529.jpg?tf=3840x" alt="android-features-img-project" />
+                    </div>
+                    <div id="text-android-with-green-bg">
+                        <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+
     </main>
 </body>
 </html>

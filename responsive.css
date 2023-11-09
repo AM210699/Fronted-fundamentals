@@ -1,0 +1,225 @@
+
+@media screen and (max-width: 1280px) {
+    body {
+        background-color: beige;
+    }
+
+    .button-options {
+        display: flex;
+        flex-direction: row; 
+        margin-top: 20px; 
+        justify-content: space-around;
+    }
+    
+    .button-options button {
+        margin: 5px 0; 
+    }
+}
+
+
+
+@media screen and (max-width: 978px ) {
+
+    body {
+        background-color: aquamarine;
+    }
+
+    #container-main {
+        width: 100%;
+    }
+
+    nav a {
+        padding: 10px;
+        
+    }
+
+    .container-video {
+        grid-area: container-video;
+        width: 300px;
+        height: 300px;
+        margin: 0px 0px 0px 20px;
+        padding: 10px;
+        border-radius: 5%;
+    }
+
+    .grid-container {
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+            "form image-1" 
+            "image-2 image-3";
+    }
+
+    #image2 {
+        margin-top: 40px;
+    }
+
+    #image3 {
+        margin-top: 40px;
+    }
+
+    #section-project-flex {
+        display: flex;
+        flex-direction: row;
+        background-color: #95f2b7;
+        margin: 50px;
+        padding: 50px;
+        border-radius: 5%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        
+    }
+    
+    #grid-android-column-1 {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto 50% 10% 30%;
+        grid-template-areas:
+            "title-features"
+            "android-text"
+            "android-button"
+            "android-features-img";
+        place-items: center;
+    }
+    
+    
+    #grid-android-column-1 h1 {
+        color: rgb(245, 245, 235);
+        font-size: 2rem;
+    }
+
+    #android-relative-column {
+        position: relative;
+    }
+    
+
+    #android-img-with-green-bg {
+        position: relative;
+        right: 145px;
+
+    }
+
+    #android-img-with-green-bg  img{
+        width: 80%;
+        border-radius: 5%;
+    }
+    
+    #text-android-with-green-bg {
+        position: relative;
+        left: 185px;
+        top: 100px;
+        grid-area: "second-text-android-features"; 
+        width: 50%; 
+        text-align: justify;
+    }
+
+
+}
+
+
+@media  screen and (max-width: 797px ) {
+
+    
+    
+}
+
+
+@media screen and (max-width: 400px){
+    
+}
+
+
+
+
+/*Tablet*/
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    #container-main {
+        
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "container-image  container-paragraphe"
+                             "container-short-paragraphe  container-video";
+        background-color: aquamarine;
+                             
+    }
+
+    .container-paragraphe {
+        overflow: scroll;
+    }
+
+    .button-options {
+        display: flex;
+        flex-direction: row; 
+        margin-top: 20px; 
+        justify-content: space-around;
+    }
+    
+    .button-options button {
+        margin: 5px 0; 
+    }
+}
+
+
+/*  Media Queries */
+/* Media Query para dispositivos menores a 600px */
+/*Mobile*/
+@media screen and (max-width: 600px) {
+
+    .flex-container{
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    nav * {
+        width: 100%; /* Centra las opciones */
+        border: none; /* Quita el borde */
+        text-align: center;
+        display: block !important;
+
+    }
+
+    .option {
+        margin: 8px; /* Agrega un espaciado de 8px entre las opciones */
+        background-color: bisque;
+    }
+
+    #container-main {
+        grid-template-columns: auto;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-areas:"container-image"
+                            "container-paragraphe"
+                            "container-short-paragraphe"
+                            "container-video";
+        background-color: aquamarine;
+        height: auto;
+    }
+
+    
+    .container-paragraphe {
+        overflow: scroll;
+    }
+
+    
+    .button-options {
+        display: flex;
+        flex-direction: row; 
+        margin-top: 20px; 
+        justify-content: space-around;
+    }
+    
+    .button-options button {
+        margin: 5px 0; 
+    }
+
+    .container-video {
+        width: auto;
+    }
+}
+
+
