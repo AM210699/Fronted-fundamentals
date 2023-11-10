@@ -1,0 +1,100 @@
+@charset "UTF-8";
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el contenido se extienda al menos al 100% de la altura de la ventana */
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.android-version {
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.custom-carousel {
+  margin-top: 30px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-carousel h5 {
+  color: #0d0d0d;
+}
+
+.custom-carousel p {
+  color: #6c757d;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #007bff;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.carousel-inner {
+  border-radius: 10px;
+}
+
+.carousel-item img {
+  border-radius: 10px;
+}
+
+.carousel-caption {
+  text-align: center;
+  background-color: rgba(0, 123, 255, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+#androidCarousel img {
+  width: 100%; /* o ajusta el valor según sea necesario */
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain; /* o 'cover' según prefieras */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto; /* Empuja el pie de página hacia la parte inferior */
+  width: 100%;
+}/*# sourceMappingURL=products.css.map */

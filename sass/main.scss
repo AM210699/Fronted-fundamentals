@@ -2,6 +2,13 @@
 @import 'animations';
 @import 'buttons';
 
+  
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
 
 // Estilos
 body {
@@ -13,12 +20,23 @@ body {
   background-color: $navbar-bg !important;
 }
 
+.navbar a {
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #6d8229; /* Color deseado al pasar el ratón */
+    transform: translateY(-3px); /* Ajusta la cantidad de translación según tu preferencia */
+
+}
+
+
+
 
 .button-options {
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin: 30px;
   justify-content: space-around;
   
 }
@@ -47,6 +65,9 @@ body {
     height: 70%;
     border-radius: 5%;
     align-items: center;
+    animation: opacityFlash 1s ease-in-out infinite;
+
+
   }
 }
 
@@ -73,49 +94,59 @@ body {
   margin: 0px 0px 0px 30px;
   padding: $padding;
   border-radius: 5%;
+
 }
 
 .grid-container {
-  display: grid;
-  width: 100%;
-  height: auto;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 100%;
-  grid-template-areas: 
-    "form image-1 image-2 image-3";
-    margin-top: $margin;
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+        "form image-1 image-2 image-3";
+    
 }
 
 .form-container {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  grid-area: "form";
-  margin-right: 40px;
-  margin-top: $margin;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    grid-area: "form";
+    margin-right: 40px ;
 }
+
 
 .grid-container img {
-  width: auto;
-  height: 100%;
-  max-width: 80%;
-  justify-content: space-around;
-  border-top-right-radius: 5%;
-  margin-top: $margin;
 
+    width: auto;
+    height: 90%;
+    max-width: 70%;
+    border-top-right-radius: 5%;
 }
 
-#image1 {
+
+.image-container {
+    width: 50%;
+}
+
+#image1  {
   grid-area: image-1;
+  animation: swing 2s ease-in-out infinite;
+
+
 }
 
-#image2 {
+#image2  {
   grid-area: image-2;
+  animation: fadeIn 1s ease-in-out;
 }
 
-#image3:hover {
+#image3  {
   grid-area: image-3;
-  transition: opacity 0.3s ease-in-out;
+  animation: pulse 5s ease-in-out infinite;
+
+
 }
 
 #section-project-flex {

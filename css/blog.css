@@ -1,0 +1,38 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.blog-post {
+  margin-bottom: 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.post-info {
+  color: #888;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}/*# sourceMappingURL=blog.css.map */
