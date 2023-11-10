@@ -1,0 +1,226 @@
+@import 'variables';
+@import 'animations';
+@import 'buttons';
+
+
+// Estilos
+body {
+  margin: 8px 16px 8px 16px;
+}
+
+#navbar {
+  padding: 20px;
+  background-color: $navbar-bg !important;
+}
+
+
+.button-options {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  justify-content: space-around;
+  
+}
+
+
+#container-main {
+  display: grid;
+  grid-template-columns: auto 30% 35%;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+    "container-image container-paragraphe container-paragraphe"
+    "container-image container-short-paragraphe container-video";
+}
+
+.container-image {
+  grid-area: container-image;
+  margin: $margin;
+  padding: $padding;
+  text-align: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 80%;
+    height: 70%;
+    border-radius: 5%;
+    align-items: center;
+  }
+}
+
+.container-paragraphe {
+  grid-area: container-paragraphe;
+  margin: $margin;
+  padding: $padding;
+  font-family: "Kanit", sans-serif;
+  text-align: justify;
+}
+
+.container-short-paragraphe {
+  grid-area: container-short-paragraphe;
+  margin: 0px $margin $margin $margin;
+  padding: $padding;
+  font-family: "Kanit", sans-serif;
+  text-align: justify;
+}
+
+.container-video {
+  grid-area: container-video;
+  width: 400px;
+  height: 300px;
+  margin: 0px 0px 0px 30px;
+  padding: $padding;
+  border-radius: 5%;
+}
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 100%;
+  grid-template-areas: 
+    "form image-1 image-2 image-3";
+    margin-top: $margin;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  grid-area: "form";
+  margin-right: 40px;
+  margin-top: $margin;
+}
+
+.grid-container img {
+  width: auto;
+  height: 100%;
+  max-width: 80%;
+  justify-content: space-around;
+  border-top-right-radius: 5%;
+  margin-top: $margin;
+
+}
+
+#image1 {
+  grid-area: image-1;
+}
+
+#image2 {
+  grid-area: image-2;
+}
+
+#image3:hover {
+  grid-area: image-3;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#section-project-flex {
+  display: flex;
+  flex-direction: row;
+  background-color: $primary-color;
+  margin: $margin;
+  padding: 100px;
+  border-radius: 5%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#grid-android-column-1 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-rows: auto 30% 15% 40%;
+  grid-template-areas: 
+    "title-features"
+    "android-text"
+    "android-button"
+    "android-features-img";
+  place-items: center;
+}
+
+#grid-android-column-1 * {
+  margin: $margin;
+}
+
+#android-relative-column {
+  position: relative;
+  right: 100px;
+}
+
+#android-img-with-green-bg img {
+  position: relative;
+  left: 270px;
+  top: 50px;
+  width: 60%;
+  border-radius: 5%;
+}
+
+#text-android-with-green-bg {
+  position: relative;
+  left: 300px;
+  top: 100px;
+  grid-area: "second-text-android-features";
+  width: 50%;
+  text-align: justify;
+}
+
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 100px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
